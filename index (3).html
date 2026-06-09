@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte - Futuro Sustentável</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color:#f9fbf9; /* Um off-white levemente esverdeado */
+            color:#2d3436;
+        }
+
+        header{
+            background-color:#1b4d3e; /* Verde floresta profundo */
+            color:#e0f2f1;
+            padding:40px 20px;
+            text-align:center;
+            border-bottom: 5px solid #8bc34a; /* Linha de destaque verde limão */
+        }
+
+        nav{
+            background-color:#2e7d32; /* Verde agricultura */
+            padding:12px;
+            text-align:center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover{
+            color:#dce775; /* Amarelo esverdeado para o hover */
+        }
+
+        .banner{
+            width:100%;
+            height:450px;
+            /* Imagem focada em plantação e tecnologia */
+            background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1200&q=80');
+            background-size:cover;
+            background-position:center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-text {
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .container{
+            width:90%;
+            max-width: 1200px;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        .cards{
+            display:flex;
+            gap:25px;
+            flex-wrap:wrap;
+            justify-content:center;
+        }
+
+        .card{
+            background:white;
+            width:320px;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 10px 20px rgba(0,0,0,0.05);
+            transition:0.4s;
+            border: 1px solid #e0e0e0;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width:100%;
+            height:210px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card-content h3{
+            margin-bottom:12px;
+            color:#1b4d3e;
+            font-size: 1.4em;
+        }
+
+        .card-content p {
+            line-height: 1.6;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        footer{
+            background:#1b4d3e;
+            color:#a5d6a7;
+            text-align:center;
+            padding:30px;
+            margin-top:50px;
+            border-top: 5px solid #8bc34a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AGRO FORTE: FUTURO SUSTENTÁVEL</h1>
+        <p>Equilíbrio essencial entre produtividade e preservação</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Sustentabilidade</a>
+        <a href="#">Tecnologia no Campo</a>
+        <a href="#">Projetos</a>
+    </nav>
+
+    <div class="banner">
+        <div class="banner-text">
+            <h2>O amanhã começa no solo de hoje.</h2>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2 style="text-align:center; margin-bottom:40px; color: #2e7d32; font-size: 2em;">
+            Pilares da Produção Consciente
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=400&q=80" alt="Agro Tecnologia">
+                <div class="card-content">
+                    <h3>Inovação Verde</h3>
+                    <p>
+                        Uso de drones e sensores para otimizar o uso de recursos naturais, reduzindo desperdícios e aumentando a precisão.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=400&q=80" alt="Solo Saudável">
+                <div class="card-content">
+                    <h3>Saúde do Solo</h3>
+                    <p>
+                        Técnicas de plantio direto e rotação de culturas que regeneram a terra e garantem safras ricas por gerações.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=400&q=80" alt="Preservação">
+                <div class="card-content">
+                    <h3>Preservação</h3>
+                    <p>
+                        Integração lavoura-pecuária-floresta (ILPF) como o caminho para o equilíbrio térmico e hídrico do ecossistema.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>AgroForte Sustentável</strong></p>
+        <p>© 2026 - Cultivando um futuro para o agronegócio brasileiro.</p>
+    </footer>
+
+</body>
+</html>
